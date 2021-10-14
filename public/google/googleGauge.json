@@ -4,7 +4,7 @@
 	"name": "Google Gauge Box",
 	"description": "A Google Gauge box",
 	"newInstancePrefix": "googleGauge",
-	"icon": "https://1efc-86-95-167-3.ngrok.io/static/googleGauge.png",
+	"icon": "https://i031639.github.io/public/google/googleGauge.png",
 	"vendor": "Laurens",
 	"eula": "",
 	"license": "",
@@ -12,7 +12,7 @@
 		{
 			"kind": "main",
 			"tag": "com-sap-sample-google",
-			"url": "https://1efc-86-95-167-3.ngrok.io/static/googleGauge.js",
+			"url": "https://i031639.github.io/public/google/googleGauge.js",
 			"integrity": "",
 			"ignoreIntegrity": true
 		}
