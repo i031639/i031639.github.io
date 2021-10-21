@@ -12,7 +12,7 @@ var getScriptPromisify = (src) => {
       <div id="root" style="width: 100%; height: 100%;">
       </div>
     `
-  class SamplePrepared extends HTMLElement {
+  class ECharts extends HTMLElement {
     constructor () {
       super()
 
@@ -36,28 +36,26 @@ var getScriptPromisify = (src) => {
       const chart = echarts.init(this._root)
       const option = {
 
-option = {
-  tooltip: {
-    formatter: '{a} <br/>{b} : {c}%'
-  },
-  series: [
-    {
-      name: 'Pressure',
-      type: 'gauge',
-      detail: {
-        formatter: '{value}'
-      },
-      data: [
-        {
-          value: 50,
-          name: 'SCORE'
+        option = {
+          tooltip: {
+            formatter: '{a} <br/>{b} : {c}%'
+          },
+          series: [
+            {
+              name: 'Pressure',
+              type: 'gauge',
+              detail: {
+                formatter: '{value}'
+              },
+              data: [
+                {
+                  value: 50,
+                  name: 'SCORE'
+                }
+              ]
+            }
+          ]
         }
-      ]
-    }
-  ]
-};
-
-
 
 
       }
@@ -65,5 +63,5 @@ option = {
     }
   }
 
-  customElements.define('com-sap-sample-echarts-prepared', SamplePrepared)
+  customElements.define('com-sap-sample-echarts', ECharts)
 })()
