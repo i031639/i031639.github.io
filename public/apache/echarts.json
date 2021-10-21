@@ -1,0 +1,34 @@
+{
+  "id": "com.sap.sample.echarts",
+  "version": "1.0.0",
+  "name": "ECharts Example",
+  "description": "Apache ECharts Example",
+  "newInstancePrefix": "ECharts",
+  "icon": "https://i031639.github.io/public/apache/echarts.png",
+  "vendor": "LG",
+  "eula": "",
+  "license": "",
+  "webcomponents": [
+    {
+      "kind": "main",
+      "tag": "com-sap-sample-echarts",
+      "url": "https://i031639.github.io/public/apache/echarts.js",
+      "integrity": "",
+      "ignoreIntegrity": true
+    }
+  ],
+  "properties": {
+		"width": {
+			"type": "integer",
+			"default": 600
+		},
+		"height": {
+			"type": "integer",
+			"default": 420
+		}
+  },
+  "methods": {
+  },
+  "events": {
+  }
+}
