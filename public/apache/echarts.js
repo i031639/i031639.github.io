@@ -34,30 +34,49 @@ var getScriptPromisify = (src) => {
       await getScriptPromisify('https://cdn.bootcdn.net/ajax/libs/echarts/5.0.0/echarts.min.js')
 
       const chart = echarts.init(this._root)
-      
-      const option = {
-        tooltip: {
-          formatter: '{a} <br/>{b} : {c}%'
-        },
-        series: [
-          {
-            name: 'Pressure',
-            type: 'gauge',
-            detail: {
-              formatter: '{value}'
-            },
-            data: [
-              {
-                value: 50,
-                name: 'SCORE'
-              }
-            ]
-          }
-        ]
-      
 
-      }
-      
+var data = [];
+for (let i = 0; i <= 360; i++) {
+  let t = (i / 180) * Math.PI;
+  let r = Math.sin(2 * t) * Math.cos(2 * t);
+  data.push([r, i]);
+}
+
+const option = {
+  title: {
+    text: 'Two Value-Axes in Polar'
+  },
+  legend: {
+    data: ['line']
+  },
+  polar: {
+    center: ['50%', '54%']
+  },
+  tooltip: {
+    trigger: 'axis',
+    axisPointer: {
+      type: 'cross'
+    }
+  },
+  angleAxis: {
+    type: 'value',
+    startAngle: 0
+  },
+  radiusAxis: {
+    min: 0
+  },
+  series: [
+    {
+      coordinateSystem: 'polar',
+      name: 'line',
+      type: 'line',
+      showSymbol: false,
+      data: data
+    }
+  ],
+  animationDuration: 2000
+};
+
       chart.setOption(option)
     }
   }
