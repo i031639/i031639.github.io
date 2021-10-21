@@ -34,31 +34,30 @@ var getScriptPromisify = (src) => {
       await getScriptPromisify('https://cdn.bootcdn.net/ajax/libs/echarts/5.0.0/echarts.min.js')
 
       const chart = echarts.init(this._root)
+      
       const option = {
-
-        option = {
-          tooltip: {
-            formatter: '{a} <br/>{b} : {c}%'
-          },
-          series: [
-            {
-              name: 'Pressure',
-              type: 'gauge',
-              detail: {
-                formatter: '{value}'
-              },
-              data: [
-                {
-                  value: 50,
-                  name: 'SCORE'
-                }
-              ]
-            }
-          ]
-        }
-
+        tooltip: {
+          formatter: '{a} <br/>{b} : {c}%'
+        },
+        series: [
+          {
+            name: 'Pressure',
+            type: 'gauge',
+            detail: {
+              formatter: '{value}'
+            },
+            data: [
+              {
+                value: 50,
+                name: 'SCORE'
+              }
+            ]
+          }
+        ]
+      
 
       }
+      
       chart.setOption(option)
     }
   }
