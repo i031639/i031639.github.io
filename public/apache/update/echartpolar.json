@@ -1,0 +1,34 @@
+{
+  "id": "com.sap.sample.echartpolar",
+  "version": "1.0.0",
+  "name": "EChart Polar",
+  "description": "Apache EChart Polar",
+  "newInstancePrefix": "EChartPolar",
+  "icon": "https://i031639.github.io/public/apache/update/lg.png",
+  "vendor": "Laurens",
+  "eula": "",
+  "license": "",
+  "webcomponents": [
+    {
+      "kind": "main",
+      "tag": "com-sap-sample-echartpolar",
+      "url": "https://i031639.github.io/public/apache/update/echartpolar.js",
+      "integrity": "",
+      "ignoreIntegrity": true
+    }
+  ],
+  "properties": {
+		"width": {
+			"type": "integer",
+			"default": 600
+		},
+		"height": {
+			"type": "integer",
+			"default": 420
+		}
+  },
+  "methods": {
+  },
+  "events": {
+  }
+}
