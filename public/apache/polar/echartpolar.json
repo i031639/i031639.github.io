@@ -4,7 +4,7 @@
   "name": "EChart Polar",
   "description": "Apache EChart Polar",
   "newInstancePrefix": "EChartPolar",
-  "icon": "https://i031639.github.io/public/apache/update/lg.png",
+  "icon": "https://i031639.github.io/public/apache/polar/LG.png",
   "vendor": "Laurens",
   "eula": "",
   "license": "",
@@ -12,7 +12,7 @@
     {
       "kind": "main",
       "tag": "com-sap-sample-echartpolar",
-      "url": "https://i031639.github.io/public/apache/update/echartpolar.js",
+      "url": "https://i031639.github.io/public/apache/polar/echartpolar.js",
       "integrity": "",
       "ignoreIntegrity": true
     }
